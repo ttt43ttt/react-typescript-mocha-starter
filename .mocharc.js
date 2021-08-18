@@ -14,8 +14,9 @@ module.exports = {
   //预先加载的库，比如babel，ts-node等
   require: [
     "global-jsdom/register",
-    "test/babel-register.js",
-    "test/assert-register.js",
+    "mocha/babel-register.js",
+    "mocha/assert-register.js",
+    "mocha/mocha-watch-cleanup-after-each.js",
     "ignore-styles",
   ],
   ui: "bdd",
